@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="songlist"> -->
+            <nav class="songlist"><div class="sng"><h1><u>Playlist</u></h1></div>
+                <br>
+                <div class="sng">
+                    <h1 id=song>Moye Moye</h1>
+                    <h5 id=artist>Daler Mehndi</h5><img src="./img/moye.jpg" id="photo">
+                </div>
+                <div class="sng">
+                    <h1 id=song>Aku sayang</h1>
+                    <h5 id=artist>Harissa Adlynn</h5><img src="./img/DJBC.jpg" id="photo">
+                </div>
+                <div class="sng">
+                    <h1 id=song>Time traveller</h1>
+                    <h5 id=artist>M.I.A</h5><img src="/img/LLMY.jpg" id="photo">
+                </div>
+                <div class="sng">
+                    <h1 id=song>Shape of You</h1>
+                    <h5 id=artist>XXtentaria</h5><img src="./img/Shape-of-You.jpg" id="photo">
+                </div>
+                <div class="sng">
+                    <h1 id=song>Let me love you</h1>
+                    <h5 id=artist>Unstoppable</h5><img src="./img/LLMY.jpg" id="photo">
+                </div>
+                <div class="sng">
+                    <h1 id=song>Despacito</h1>
+                    <h5 id=artist>Louise Fonsi,Daddy Yankee</h5><img src="./img/DPC.jpg" id="photo">
+                </div>
+                <div class="sng">
+                    <h1 id=song>Unstoppable</h1>
+                    <h5 id=artist>Unknown</h5><img src="./img/Unstopable.jpg" id="photo">
+                </div>
+                <!-- <div class="sng">
+                    <h1 id=song></h1>
+                    <h5 id=artist></h5><img src="" id="./img/DPC.jpg">
+                </div> -->
+
+            </nav>
+
+        <div class="music_player">
+
+            <audio src="aku.mp3" class="audio"></audio>
+            <img src="moye.jpg" class="img">
+            <h1 class="songname">Song Name</h1>
+            <p class="artist">Unknown</p>
+            <input type="range" value="0" id="range">
+            <!-- <nav><span class="time">00:00</span>
+                <span>07:56</span>
+            </nav> -->
+            <div class="controls">
+                <button onclick="prev()" class="back"><i class="fa-solid fa-backward-step"></i></button>
+                <button onclick="playpause()" class="play"><i class="fa-solid fa-play"></i></button>
+                <button onclick="next()" class="forward"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./music.js"></script>
+</body>
+
+</html>
